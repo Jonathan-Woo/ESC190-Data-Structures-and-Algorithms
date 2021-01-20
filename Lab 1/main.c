@@ -52,6 +52,11 @@ void insertion_sort_for(int *arr, int size){
             else{
                 arr[e + 1] = arr[e];
             }
+            //If we are at the end of the list and the loop hasn't been broken yet,
+            //we know that the element is less than arr[0]. So, we set arr[0] to be cur_elem
+            if(e == 0){
+                arr[0] = cur_elem;
+            }
         }
         //after sorting an element, the size of the sorted array increases by 1
         size_sorted += 1;
@@ -73,6 +78,6 @@ void print_array(int *arr, int size){
 int main() {
     int arr[6] = {3,1,5,6,9,2};
     insertion_sort_for(arr, 6);
-    insertion_sort_while(arr,6);
+    // insertion_sort_while(arr,6);
     print_array(arr, 6);
 }
