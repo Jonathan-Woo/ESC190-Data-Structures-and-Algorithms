@@ -1,5 +1,5 @@
 #include <stdio.h>
-void insertion_sort_while(int *arr, size){
+void insertion_sort_while(int *arr, int size){
     /*
      * Uses insertion sort to sort array arr of size size using a while loop
      */
@@ -26,7 +26,7 @@ void insertion_sort_while(int *arr, size){
     }
 }
 
-void insertion_sort_for(int *arr, size){
+void insertion_sort_for(int *arr, int size){
     /*
      * Uses insertion sort to sort array arr of size size using a for loop.
      */
@@ -58,7 +58,7 @@ void insertion_sort_for(int *arr, size){
     }
 }
 
-void print_array(int *arr, size){
+void print_array(int *arr, int size){
     /*
      * Prints an integer array
      */
