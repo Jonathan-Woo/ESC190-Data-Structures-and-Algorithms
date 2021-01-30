@@ -91,7 +91,7 @@ void append_float(struct node2* head, float a){
 
 void append_double(struct node2* head, double a){
     /*
-     * This function appends a node with float value
+     * This function appends a node with double value
      * to the linked list starting at head
      */
     struct node2* cur = head;
@@ -119,11 +119,11 @@ void print_node2_iter(struct node2* head){
     struct node2* cur = head;
 
     while (cur != NULL){
-        if (cur->type == 0){
+        if(cur->type == 0){
             int *add = cur->p_data;
             printf("%d\n", *add);
         }
-        else if (cur->type == 1){
+        else if(cur->type == 1){
             float *add = cur->p_data;
             printf("%f\n", *add);
         }
