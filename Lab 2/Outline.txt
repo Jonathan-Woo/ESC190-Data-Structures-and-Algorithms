@@ -1,0 +1,20 @@
+1. For a linked list struct defined as below, write a function that prints out all 
+   the data in the linked list. Do not use recursion.
+
+struct node{
+    int data; 
+    struct node *next; 
+};
+
+2. Same as (1), but now use recursion.
+
+3. Implement a linked list (with print and append) that can store objects of
+   type int, float, and double. Use the following struct:
+
+struct node{
+    void *p_data; //a pointer to data (allocated with malloc)
+    int type; // 0 if int, 1 if float, 2 if double
+    struct node *next;
+}
+  
+   You may like to write the functinos append_int, append_float, and append_double separately
