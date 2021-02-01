@@ -1,4 +1,8 @@
 #include <stdio.h>
+void f(int *a){
+    *a = 10;
+}
+
 void insertion_sort_while(int *arr, int size){
     /*
      * Uses insertion sort to sort array arr of size size using a while loop

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lab_1">
-				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug/Lab_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug"/>
+				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug/Lab_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_1"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_1"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lab_1/fast">
-				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug/Lab_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/cmake-build-debug"/>
+				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug/Lab_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,17 +71,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_1/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_1/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/main.c">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/main.c">
 			<Option target="Lab_1"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Personal/Labs/Lab 1/CMakeLists.txt">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

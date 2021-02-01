@@ -155,7 +155,7 @@ void print_node2_rec(struct node2* head){
         }
         else if(cur->type == 2){
             double *add = cur->p_data;
-            printf("%f\n", *add);
+            printf("%lf\n", *add);
         }
         print_node2_rec(cur->next);
     }
