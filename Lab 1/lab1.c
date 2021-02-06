@@ -40,7 +40,7 @@ void insertion_sort(int arr[], int size){
 void print_arr(int *arr, int size){
     int i = 0;
     for (i = 0; i < size; i++){
-        printf("%d ", arr[i]);
+        printf("%d \n", arr[i]);
     }
 }
 
