@@ -20,6 +20,10 @@ def find(L, e):
     elif e > L[half]:
         return find(L[half:],e) + half
 
+    #keep track of the head and tail of the list
+    #solution when they converge
+
+
 
 def highest(L, e):
     if e < L[0] or e > L[-1]:
@@ -35,8 +39,14 @@ def highest(L, e):
 
 
 if __name__ == "__main__":
-    L = [0,1,2,4,5,5,6];
+    L = [0,1,2,2,3,4,5];
 
-    print(find(L,1))
-    print(highest(L,1))
+    print(find(L,2))
+    print(highest(L,2))
 
+# [0 1 2 3 4 5]
+# [0 1 2] [3 4 5]
+#
+# [0] [1 2]
+#
+# [0 1] [2]

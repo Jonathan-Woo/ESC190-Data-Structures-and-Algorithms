@@ -14,7 +14,11 @@ void insert_node(int value, int pos, struct node *head){
     struct node *cur = head;
     struct node *new_node = (struct node*)malloc(sizeof(struct node));
     new_node->data = value;
-    
+
+    for(int i = 0; i < pos; i++){
+        cur = cur->next;
+    }
+
     struct node *p_temp = (cur[pos])->next;
     (cur[pos])->next = new_node;
     new_node->next = p_temp;

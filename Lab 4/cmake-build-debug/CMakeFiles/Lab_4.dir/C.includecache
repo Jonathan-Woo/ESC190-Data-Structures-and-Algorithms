@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 4/lab4.c
+lab4.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 4/lab4.h
+stdlib.h
+-
+stdio.h
+-
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 4/lab4.h
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 4/lab4_main.c
+lab4.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 4/lab4.h
+stdlib.h
+-
+stdio.h
+-
+
