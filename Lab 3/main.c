@@ -16,6 +16,23 @@ int my_strlen(char *s1){
     return length;
 }
 
+char *my_strcat(char *dest, char *src){
+    /*
+     * appends src to dest
+     */
+    char new_string[my_strlen(dest) + my_strlen(src) + 1];
+
+    int i;
+    for(i = 0; i < my_strlen(dest); i++){
+        new_string[i] = dest[i];
+    }
+
+    for(i = 0; i < my_strlen(src); i++){
+        new_string[my_strlen(dest) + i] = src[i];
+    }
+    return new_string;
+}
+
 void my_strcomb_skip1(char *s1, char *s2){
     /*
      * appends s2 to s1 whilst skipping the first character
@@ -66,25 +83,13 @@ int my_str_cmp_rec(char *str1, char *str2){
 
         //recursive call
         my_str_cmp_rec(new_str1, new_str2);
+        //return my_strcmp_rec(str1 + 1, str2 + 1)
+
     }else{
         //if the characters are different, we have a solution
         return str1[0] - str2[0];
     }
     return 0;
-}
-
-char *my_strcat(char *dest, char *src){
-    char new_string[my_strlen(dest) + my_strlen(src) + 1];
-
-    int i;
-    for(i = 0; i < my_strlen(dest); i++){
-        new_string[i] = dest[i];
-    }
-
-    for(i = 0; i < my_strlen(src); i++){
-        new_string[my_strlen(dest) + i] = src[i];
-    }
-    return new_string;
 }
 
 int my_atoi_btf(char *str){
@@ -96,8 +101,11 @@ int my_atoi_btf(char *str){
     int total = 0;
     for(i = my_strlen(str) - 1; i >= 0; i--){
         if(isdigit(str[i])){
+            //res  = res*10 + (*str - '0')
             total += (str[i]-'0') * pow(10, my_strlen(str) - 1 - i);
         }
+        //else{
+        //res = res * 10
     }
     return total;
 }
@@ -175,6 +183,28 @@ int main() {
 
     printf("Front to back: %d\n", atoi_sol_ftb);
     printf("Back to front %d\n", atoi_sol_btf);
+
+    struct node *node1 = (struct node *)malloc(sizeof(struct node));
+    struct node *node2 = (struct node *)malloc(sizeof(struct node));
+    struct node *node3 = (struct node *)malloc(sizeof(struct node));
+    struct node *node4 = (struct node *)malloc(sizeof(struct node));
+
+    node1->next = node2;
+    node2->next = node3;
+    node3->next = node4;
+    node4->next = node1;
+
+    node1->val = 1;
+    node2->val = 2;
+    node3->val = 3;
+    node4->val = 4;
+
+    int *lam = (int *)malloc(sizeof(int));
+    int *mu = (int *)malloc(sizeof(int));
+
+    floyd(node1, node1, lam, mu);
+
+    printf("Lam: %d Mu: %d\n", *lam, *mu);
 
     return 0;
 }

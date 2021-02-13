@@ -12,14 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="537b013b-a310-48d4-97c1-97a3b71bd292" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/Lab_1" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/Lab_1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab 1/lab1.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 1/lab1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab_3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab_3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -62,11 +55,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,6 +66,7 @@
       <updated>1612558532648</updated>
       <workItem from="1612558535797" duration="4444000" />
       <workItem from="1612630718876" duration="2995000" />
+      <workItem from="1612641876217" duration="1213000" />
     </task>
     <servers />
   </component>
