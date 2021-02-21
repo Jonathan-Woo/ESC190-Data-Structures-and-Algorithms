@@ -4,44 +4,54 @@
    The function should run in O(log(n)) time.
    This should help you with Project 1.
 '''
-
 def find(L, e):
-    '''Takes a sorted list L and element e, returns the lowest
-    index in L such that L[i] == e
-    '''
-    if e < L[0] or e > L[-1]:
+    head = 0
+    tail = len(L) - 1
+    mid = 0
+
+    while tail - head > 1:
+        #get to the middle of the list
+        mid = head + ((tail - head)//2)
+
+        #keep track of the head and tail of the list
+        #solution when they converge
+
+        if L[mid] >= e:
+            tail = mid
+        elif L[mid] < e:
+            head = mid
+
+    if L[mid] == e:
+        return mid
+    else:
         return -1
-
-    half = len(L)//2 + 1
-    if e == L[half]:
-        return half
-    elif e < L[half]:
-        return find(L[:half],e)
-    elif e > L[half]:
-        return find(L[half:],e) + half
-
-    #keep track of the head and tail of the list
-    #solution when they converge
-
-
 
 def highest(L, e):
-    if e < L[0] or e > L[-1]:
+    head = 0
+    tail = len(L)
+    mid = 0
+
+    while tail - head > 1:
+        #get to the middle of the list
+        mid = head + ((tail - head + 1)//2)
+
+        #keep track of the head and tail of the list
+        #solution when they converge
+
+        if L[mid] > e:
+            tail = mid
+        elif L[mid] <= e:
+            head = mid
+
+    if L[mid] == e:
+        return mid
+    else:
         return -1
-
-    half = len(L)//2
-    if e == L[half]:
-        return half
-    elif e > L[half]:
-        return find(L[half:],e) + half
-    elif e < L[half]:
-        return find(L[:half],e)
-
 
 if __name__ == "__main__":
     L = [0,1,2,2,3,4,5];
 
-    print(find(L,2))
+    # print(find(L,2))
     print(highest(L,2))
 
 # [0 1 2 3 4 5]
