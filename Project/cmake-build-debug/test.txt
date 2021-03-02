@@ -1,0 +1,9 @@
+8
+      11174257	İstanbul, Turkey
+      10927986	Delhi, India
+      10444527	Manila, Philippines
+      10381222	Moscow, Russia
+      10356500	Dhaka, Bangladesh
+      10349312	Seoul, South Korea
+      10021295	São Paulo, Brazil
+       9000000	Lagos, Nigeria
