@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+autocomplete.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.h
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.h
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/main.c
+autocomplete.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.h
+

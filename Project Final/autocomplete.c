@@ -264,6 +264,7 @@ int compare_weight(const void* p1, const void* p2){
     //therefore sorting by ascending ascii value
     return(int)(termB->weight - termA->weight);
 }
+
 void autocomplete(struct term **answer, int *n_answer, struct term *terms, int nterms, char *substr){
     /*
      * sets all terms in terms to array of struct *answer such that they
@@ -286,12 +287,4 @@ void autocomplete(struct term **answer, int *n_answer, struct term *terms, int n
 
     //with the new array, we must now sort by weight
     qsort(*answer, *n_answer, sizeof(struct term), compare_weight);
-}
-
-void print_terms(struct term *terms, int nterms){
-    int i = 0;
-    while(i < nterms){
-        printf("Number: %d \t Term: %s \t Weight: %f \n", i + 1, (terms[i]).term, (terms[i]).weight);
-        i++;
-    }
 }
