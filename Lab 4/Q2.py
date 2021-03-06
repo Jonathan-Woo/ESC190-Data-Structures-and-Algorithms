@@ -9,7 +9,7 @@ def find(L, e):
     tail = len(L) - 1
     mid = 0
 
-    while tail - head > 1:
+    while tail - head >= 1:
         #get to the middle of the list
         mid = head + ((tail - head)//2)
 
@@ -31,7 +31,7 @@ def highest(L, e):
     tail = len(L)
     mid = 0
 
-    while tail - head > 1:
+    while tail - head >= 1:
         #get to the middle of the list
         mid = head + ((tail - head + 1)//2)
 
@@ -49,10 +49,10 @@ def highest(L, e):
         return -1
 
 if __name__ == "__main__":
-    L = [0,1,2,2,3,4,5];
+    L = [1,1,1,1,1,1,1];
 
-    # print(find(L,2))
-    print(highest(L,2))
+    print(find(L,1))
+    # print(highest(L,1))
 
 # [0 1 2 3 4 5]
 # [0 1 2] [3 4 5]

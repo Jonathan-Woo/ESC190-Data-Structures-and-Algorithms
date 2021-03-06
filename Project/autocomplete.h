@@ -2,7 +2,7 @@
 #define AUTOCOMPLETE_H
 
 struct term{
-    char term[200]; // assume terms are not longer than 200
+    char term[300]; // assume terms are not longer than 200
     double weight;
 };
 

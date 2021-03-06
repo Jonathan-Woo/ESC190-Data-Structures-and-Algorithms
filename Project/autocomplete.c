@@ -73,7 +73,8 @@ void remove_tab(char *term){
 void remove_newline(char *term){
     /*
      * removes newline (\n) from the end of a string *term
-     * remove the last character from the string (\n)
+     * At the end of each line, we're not sure if the line break is \r\n
+     * or just \n. So we check for both.
      */
     if(term[strlen(term) - 1] != '\n'){
         return;
@@ -84,7 +85,11 @@ void remove_newline(char *term){
     strcpy(temp, term);
 
     //modify the temporary string
-    temp[strlen(temp) - 1] = '\0';
+    if(temp[strlen(temp) - 2] == '\r'){
+        temp[strlen(temp) - 2] = '\0';
+    }else if(temp[strlen(temp) - 1] == '\n'){
+        temp[strlen(temp) - 1] = '\0';
+    }
 
     //copy the modified string to the original location
     strcpy(term, temp);
@@ -264,6 +269,7 @@ int compare_weight(const void* p1, const void* p2){
     //therefore sorting by ascending ascii value
     return(int)(termB->weight - termA->weight);
 }
+
 void autocomplete(struct term **answer, int *n_answer, struct term *terms, int nterms, char *substr){
     /*
      * sets all terms in terms to array of struct *answer such that they
