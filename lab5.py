@@ -34,6 +34,7 @@ def get_all_nodes(node):
     '''Return a list of the nodes in the graph of nodes connected to node
     (N.B., the nodes can be indirectly connected as well)'''
     list = []
+    # Use BFS to find all nodes, append all nodes to an empty list list
     q = [node]
     node.visited = True
     while len(q) > 0:
@@ -49,6 +50,7 @@ def get_all_nodes(node):
 def unvisit_all(node):
     '''Change all n.visited to False in all the nodes in the graph of nodes
     connected to node. Use BFS to find all the nodes'''
+    # Use BFS, change .visited to False
     q = [node]
     node.visited = False
     while len(q) > 0:
@@ -64,6 +66,10 @@ def unvisit_all(node):
 def DFS_rec(node):
     '''Print out the names of all nodes connected to node using a
     recursive version of DFS'''
+    # The Algorithm
+    # Pick any node. If it is unvisited, mark it as visited and recur on all its adjacent nodes.
+    # Repeat until all the nodes are visited, or the node to be searched is found.
+
     node.visited = True
     print(node.name)
     for con in node.connections:
@@ -76,6 +82,7 @@ def DFS_nonrec(node):
     '''Print out the names of all nodes connected to node using a non-recursive
     version of DFS. Make it so that the nodes are printed in the same order
     as in DFS_rec'''
+    # Similat to BFS, but instead of pop(0), pop()
     q = [node]
     node.visited = True
     while len(q) > 0:
