@@ -33,23 +33,32 @@ def BFS(node):
 def get_all_nodes(node):
     '''Return a list of the nodes in the graph of nodes connected to node
     (N.B., the nodes can be indirectly connected as well)'''
-    #the list will contain all connections to node node and all subsequently
-    #connected nodes
-    sol = [node]
-    i = 0
-
-    while(i < len(sol)):
-        sol.extend(sol[i].connections)
-        i+=1
-
-    return sol
-
+    # Use BFS to find all nodes, append all nodes to an empty list list
+    list = []
+    q = [node]
+    node.visited = True
+    while len(q) > 0:
+        cur = q.pop(0)
+        list.append(cur.name)
+        for con in cur.connections:
+            if not con["node"].visited:
+                q.append(con["node"])
+                con["node"].visited = True
+    print(list)
 ################################################################################
 
 def unvisit_all(node):
     '''Change all n.visited to False in all the nodes in the graph of nodes
     connected to node. Use BFS to find all the nodes'''
-
+    # Use BFS, change .visited to False
+    q = [node]
+    node.visited = False
+    while len(q) > 0:
+        cur = q.pop(0)
+        for con in cur.connections:
+            if con["node"].visited:
+                q.append(con["node"])
+                con["node"].visited = False
 
 
 ###############################################################################
@@ -61,17 +70,11 @@ def DFS_rec(node):
     # Pick any node. If it is unvisited, mark it as visited and recur on all its adjacent nodes.
     # Repeat until all the nodes are visited, or the node to be searched is found.
 
-    q = [node]
-    # First, check if the current node is unvisited - if yes, it is appended in the visited set
-    for con in cur.connections:
+    node.visited = True
+    print(node.name)
+    for con in node.connections:
         if not con["node"].visited:
-            print(cur.name)
-            q.append(con["node"])
-            # Then for each neighbor of the current node, call DFS_rec for neighbor
-            for neighbor in cur.connections:
-                DFS_rec(neighbor)
-
-    # base case: when all nodes are visited, the function then returns
+            DFS_rec(con["node"])
 
 ################################################################################
 
@@ -79,6 +82,7 @@ def DFS_nonrec(node):
     '''Print out the names of all nodes connected to node using a non-recursive
     version of DFS. Make it so that the nodes are printed in the same order
     as in DFS_rec'''
+    # Similar to BFS, but instead of pop(0), pop()
     q = [node]
     node.visited = True
     while len(q) > 0:
@@ -139,7 +143,7 @@ if __name__ == '__main__':
     connect(NYC, DC, 2)
     connect(SF, DC, 5)
 
-    L = get_all_nodes(TO)
+    # L = get_all_nodes(TO)
     # DFS(TO)
     # #DFS_rec(TO)
     # unvisit_all(TO)
