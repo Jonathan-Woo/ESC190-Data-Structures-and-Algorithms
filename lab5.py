@@ -82,7 +82,7 @@ def DFS_nonrec(node):
     '''Print out the names of all nodes connected to node using a non-recursive
     version of DFS. Make it so that the nodes are printed in the same order
     as in DFS_rec'''
-    # Similat to BFS, but instead of pop(0), pop()
+    # Similar to BFS, but instead of pop(0), pop()
     q = [node]
     node.visited = True
     while len(q) > 0:
