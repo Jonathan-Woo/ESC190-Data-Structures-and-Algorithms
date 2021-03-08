@@ -3,34 +3,31 @@
 #include <string.h>
 #include "autocomplete.h"
 
-void remove_spaces(char *term){
+void remove_spaces(char* term) {
     /*
      * removes leading spaces from a string term
      */
     //duplicate the string
-    char *temp = (char *)malloc(sizeof(char) * 200);
-    char **p_temp = &temp;
+    char temp[200];
     strcpy(temp, term);
 
     //modify the temporary string
     int i = 0;
-    while(temp[i] == ' '){
+    while (temp[i] == ' ') {
         i++;
     }
-    *p_temp += i;
 
     //copy the modified string back to the original location
-    strcpy(term, temp);
+    strcpy(term, temp + i);
 }
 
-int get_weight(char *term){
+int get_weight(char* term) {
     /*
      * removes adjacent integers in front of string term
      * returns integer
      */
     //duplicate the string
-    char *temp = (char *)malloc(sizeof(char) * 200);
-    char **p_temp = &temp;
+    char temp[200];
     strcpy(temp, term);
 
     //initialize total sum
@@ -38,66 +35,68 @@ int get_weight(char *term){
 
     //modify the temporary string
     int i = 0;
-    while(temp[i] != '\t'){
+    while (temp[i] != '\t') {
         //char - '0' is a trick to convert a char to an int
         //recall that atoi/atof is for strings
         weight = (weight * 10) + (temp[i] - '0');
         i++;
     }
-    *p_temp += i;
 
     //copy the modified string back to the original location
-    strcpy(term, temp);
+    strcpy(term, temp + i);
 
     return weight;
 }
 
-void remove_tab(char *term){
+void remove_tab(char* term) {
     /*
      * removes tab from the beginning of a string **term
      * advance the string by one byte to skip the tab
      */
 
     //duplicate the string
-    char *temp = (char *)malloc(sizeof(char) * 200);
-    char **p_temp = &temp;
+    char temp[200];
     strcpy(temp, term);
 
     //modify the temporary string
-    *p_temp += 1;
-
     //copy the modified string back to the original location
-    strcpy(term, temp);
+    strcpy(term, temp + 1);
 }
 
-void remove_newline(char *term){
+void remove_newline(char* term) {
     /*
      * removes newline (\n) from the end of a string *term
-     * remove the last character from the string (\n)
+     * At the end of each line, we're not sure if the line break is \r\n
+     * or just \n. So we check for both.
      */
-    if(term[strlen(term) - 1] != '\n'){
+    if (term[strlen(term) - 1] != '\n') {
         return;
     }
 
     //duplicate the string
-    char *temp = (char *)malloc(sizeof(char) * 200);
+    char temp[200];
     strcpy(temp, term);
 
     //modify the temporary string
-    temp[strlen(temp) - 1] = '\0';
+    if (temp[strlen(temp) - 2] == '\r') {
+        temp[strlen(temp) - 2] = '\0';
+    }
+    else if(temp[strlen(temp) - 1] == '\n') {
+        temp[strlen(temp) - 1] = '\0';
+    }
 
     //copy the modified string to the original location
     strcpy(term, temp);
 }
 
-int compare_term(const void* p1, const void* p2){
+int compare_term(const void* p1, const void* p2) {
     /*
      * compare function for qsort.
      * Compares using strcmp to determine ASCII value and
      * qsort will swap each struct term if ASCII difference is positive
      */
-    struct term *termA = (struct term *)p1;
-    struct term *termB = (struct term *)p2;
+    struct term* termA = (struct term*)p1;
+    struct term* termB = (struct term*)p2;
 
     //strcmp is positive if first term has a higher ASCII value
     //negative if second term has higher ASCII value
@@ -105,9 +104,9 @@ int compare_term(const void* p1, const void* p2){
     return(strcmp(termA->term, termB->term));
 }
 
-void read_in_terms(struct term **terms, int *pnterms, char *filename) {
+void read_in_terms(struct term** terms, int* pnterms, char* filename) {
     //open the file
-    FILE *fp = fopen(filename, "r");
+    FILE* fp = fopen(filename, "r");
 
     //set the line size
     char line[200];
@@ -117,7 +116,7 @@ void read_in_terms(struct term **terms, int *pnterms, char *filename) {
     *pnterms = atoi(line);
 
     //allocate memory for the number of struct terms
-    *terms = (struct term *)malloc(sizeof(struct term) * (*pnterms));
+    *terms = (struct term*)malloc(sizeof(struct term) * (*pnterms));
 
     //go through each line
     //read each line into the term property of each struct term
@@ -145,119 +144,116 @@ void read_in_terms(struct term **terms, int *pnterms, char *filename) {
      * Now sort lexicographically. qsort takes an array so we pass in
      * the array of struct terms. We sort using compare function above
      */
+
+    fclose(fp);
     qsort(*terms, *pnterms, sizeof(struct term), compare_term);
 }
 
-int check_substring(char *word, char *substring){
+int check_substring(char* word, char* substring) {
     /*
      * checks if a substring substring is in a string string
      * returns 1 for true, 0 for false
      */
-    if(strstr(word, substring) != NULL) {
+    int i = 0;
+    while (substring[i] != '\0' && word[i] != '\0' && word[i] == substring[i]){
+        i++;
+    }
+    if (substring[i] == '\0') {
         return 1;
-    }else{
+    }
+    else{
         return 0;
     }
 }
 
-int lowest_match(struct term *terms, int nterms, char *substr){
+int lowest_match(struct term* terms, int nterms, char* substr) {
     /*
      * finds the lowest index of a string substr in array terms
      * with nterms
      */
     int head = 0;
-    int old_head = head;
     int tail = nterms - 1;
-    int old_tail = tail;
     int mid = 0;
 
-    while(tail - head > 1){
+    while (head <= tail) {
         //find the middle of the list
-        mid = head + ((tail - head)/2);
+        mid = (head + tail) / 2;
 
         //keep track of the head and tail of the list
         //solution when they converge
 
-        if(check_substring((terms[mid]).term, substr) == 1){
-            //if the middle term contains the substring, the leftmost term containing the substring
-            //must be the middle term or left of it
-            tail = mid;
-        }else if(strcmp((terms[mid]).term, substr) > 0){
+        if (check_substring((terms[mid]).term, substr) == 1) {
+            //if the middle term contains the substring, we make our way advance
+            //to the left of the string until we get the leftmost element
+            //that is the solution
+            while (mid >= head && check_substring(terms[mid].term, substr) == 1){
+                mid--;
+            }
+            return mid + 1;
+        }
+        else if(strcmp((terms[mid]).term, substr) > 0) {
             //strcmp is positive if left term has higher ASCII value
             //since terms are in ascending order, a positive strcmp
             //means that substr is on the left of mid
-            tail = mid;
-        }else if(strcmp((terms[mid]).term, substr) < 0){
+            tail = mid - 1;
+        }
+        else if(strcmp((terms[mid]).term, substr) < 0) {
             //we exclude the situation where strcmp() = 0 because that would be caught by
             //check_substring()
-            head = mid;
+            head = mid + 1;
         }
     }
-
-    if(mid != old_head && check_substring((terms[mid-1]).term, substr) == 1){
-        return mid - 1;
-    }else if(check_substring((terms[mid]).term, substr) == 1){
-        return mid;
-    }else if(mid != old_tail && check_substring((terms[mid + 1]).term, substr) == 1){
-        return mid + 1;
-    }else{
-        return -1;
-    }
+    return -1;
 }
 
-int highest_match(struct term *terms, int nterms, char *substr){
+int highest_match(struct term* terms, int nterms, char* substr) {
     /*
      * finds the highest index of a string substr in an array terms
      * with nterms
      */
     int head = 0;
-    int old_head = head;
     int tail = nterms - 1;
-    int old_tail = tail;
     int mid = 0;
 
-    while(tail - head > 1){
+    while (head <= tail) {
         //find the middle of the list
-        mid = head + ((tail - head)/2);
+        mid = (head + tail) / 2;
 
         //keep track of the head and tail of the list
         //solution when they converge
 
-        if(check_substring((terms[mid]).term, substr) == 1){
-            //if the middle term contains the substring, the rightmost term containing the substring
-            //must be the middle term or right of it
-            head = mid;
-        }else if(strcmp((terms[mid]).term, substr) > 0){
+        if (check_substring((terms[mid]).term, substr) == 1) {
+            //if the middle term contains the substring, we make our way advance
+            //to the right of the string until we get the rightmost element
+            //that is the solution
+            while(mid <= tail && check_substring(terms[mid].term, substr)){
+                mid++;
+            }
+            return mid - 1;
+        }
+        else if (strcmp((terms[mid]).term, substr) > 0) {
             //strcmp is positive if left term has higher ASCII value
             //since terms are in ascending order, a positive strcmp
             //means that substr is on the left of mid
-            tail = mid;
-        }else if(strcmp((terms[mid]).term, substr) < 0){
+            tail = mid - 1;
+        }
+        else if (strcmp((terms[mid]).term, substr) < 0) {
             //we exclude the situation where strcmp() = 0 because that would be caught by
             //check_substring()
-            head = mid;
+            head = mid + 1;
         }
     }
-
-    if(mid != old_tail && check_substring((terms[mid+1]).term, substr) == 1){
-        return mid + 1;
-    }else if(check_substring((terms[mid]).term, substr) == 1){
-        return mid;
-    }else if(mid != old_head && check_substring((terms[mid - 1]).term, substr) == 1){
-        return mid - 1;
-    }else{
-        return -1;
-    }
+    return -1;
 }
 
-int compare_weight(const void* p1, const void* p2){
+int compare_weight(const void* p1, const void* p2) {
     /*
      * compare function for qsort.
      * compares weight difference between terms such that
      * the final list is sorted descending order
      */
-    struct term *termA = (struct term *)p1;
-    struct term *termB = (struct term *)p2;
+    struct term* termA = (struct term*)p1;
+    struct term* termB = (struct term*)p2;
 
     //strcmp is positive if first term has a higher ASCII value
     //negative if second term has higher ASCII value
@@ -265,7 +261,7 @@ int compare_weight(const void* p1, const void* p2){
     return(int)(termB->weight - termA->weight);
 }
 
-void autocomplete(struct term **answer, int *n_answer, struct term *terms, int nterms, char *substr){
+void autocomplete(struct term** answer, int* n_answer, struct term* terms, int nterms, char* substr) {
     /*
      * sets all terms in terms to array of struct *answer such that they
      * are possible solutions to the string query substr
@@ -274,17 +270,22 @@ void autocomplete(struct term **answer, int *n_answer, struct term *terms, int n
     int head = lowest_match(terms, nterms, substr);
     int tail = highest_match(terms, nterms, substr);
 
-    //now that we have the first and last index, we can copy the terms with substr
-    //to the answer array
-    *n_answer = tail - head + 1;
-    *answer = (struct term *)malloc(sizeof(struct term) * (*n_answer));
-
-    int i;
-    for(i = 0; i < *n_answer; i++){
-        strcpy(((*answer)[i]).term, (terms[head + i]).term);
-        ((*answer)[i]).weight = (terms[head + i]).weight;
+    if (head == -1 && tail == -1) {
+        *n_answer = 0;
     }
+    else {
+        //now that we have the first and last index, we can copy the terms with substr
+        //to the answer array
+        *n_answer = tail - head + 1;
+        *answer = (struct term*)malloc(sizeof(struct term) * (*n_answer));
 
-    //with the new array, we must now sort by weight
-    qsort(*answer, *n_answer, sizeof(struct term), compare_weight);
+        int i;
+        for (i = 0; i < *n_answer; i++) {
+            strcpy(((*answer)[i]).term, (terms[head + i]).term);
+            ((*answer)[i]).weight = (terms[head + i]).weight;
+        }
+
+        //with the new array, we must now sort by weight
+        qsort(*answer, *n_answer, sizeof(struct term), compare_weight);
+    }
 }

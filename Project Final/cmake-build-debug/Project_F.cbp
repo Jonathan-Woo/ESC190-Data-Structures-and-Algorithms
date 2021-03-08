@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_F">
-				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug/Project_F" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug"/>
+				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug/Project_F" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/."/>
+					<Add directory="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -52,20 +52,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_F"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_F"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_F/fast">
-				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug/Project_F" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug"/>
+				<Option output="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug/Project_F" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/."/>
+					<Add directory="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -73,23 +73,23 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_F/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ F/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_F/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project\ Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.c">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/autocomplete.c">
 			<Option target="Project_F"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/autocomplete.h">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/autocomplete.h">
 			<Option target="Project_F"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/main.c">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/main.c">
 			<Option target="Project_F"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/CMakeLists.txt">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

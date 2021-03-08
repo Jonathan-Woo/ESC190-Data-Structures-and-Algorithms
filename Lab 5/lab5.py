@@ -72,7 +72,7 @@ def DFS_rec(node):
 
     node.visited = True
     print(node.name)
-    for con in node.connections:
+    for con in node.connections[::-1]:
         if not con["node"].visited:
             DFS_rec(con["node"])
 

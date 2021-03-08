@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F
+# Install script for directory: /Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project F/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
