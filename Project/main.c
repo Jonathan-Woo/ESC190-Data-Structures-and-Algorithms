@@ -6,12 +6,18 @@ int main(void)
 {
     struct term *terms;
     int nterms;
-    read_in_terms(&terms, &nterms, "fuck_praxis1.txt");
+    read_in_terms(&terms, &nterms, "cities.txt");
+    print_terms(terms, nterms);
+
+    int pos1 = lowest_match(terms, nterms, "Tor");
+    int pos2 = highest_match(terms, nterms, "Tor");
+
+    printf("First match: %d \t Second match: %d\n", pos1, pos2);
 
     struct term *answer;
     int n_answer;
-    autocomplete(&answer, &n_answer, terms, nterms, "insinuated");
-    print_terms(answer, n_answer);
+    autocomplete(&answer, &n_answer, terms, nterms, "Tor");
+//    print_terms(answer, n_answer);
     //free allocated blocks here -- not required for the project, but good practice
 
     return 0;
