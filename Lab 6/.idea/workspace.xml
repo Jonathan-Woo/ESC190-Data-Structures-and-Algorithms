@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cafe3a2f-85d0-4d46-9a6a-e3e91b62a89d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/Project F.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/autocomplete.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/autocomplete.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/autocomplete.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/autocomplete.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/Project_F.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/Project_F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/Project_F.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/cities.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/cmake-build-debug/wiktionary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Final/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1q27bZjra6cTqwhwEgsju08iydX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cafe3a2f-85d0-4d46-9a6a-e3e91b62a89d" name="Default Changelist" comment="" />
+      <created>1616265904448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616265904448</updated>
+      <workItem from="1616265906201" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
