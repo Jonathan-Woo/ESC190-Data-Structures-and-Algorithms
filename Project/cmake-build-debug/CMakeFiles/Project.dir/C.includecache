@@ -7,11 +7,9 @@
 #IncludeRegexTransform: 
 
 /Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project/autocomplete.c
-stdio.h
--
 stdlib.h
 -
-ctype.h
+stdio.h
 -
 string.h
 -
