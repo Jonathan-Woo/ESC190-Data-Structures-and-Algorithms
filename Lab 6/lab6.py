@@ -128,7 +128,7 @@ def make_data(max_nodes):
     h = []
     i = 0
 
-    while(1.2**i*5 < max_nodes):
+    while(1.2**i*5 <= max_nodes):
         for e in range(40):
             n.append(1.2**i*5)
             h.append(height_random_tree((int)(1.2**i*5)))
