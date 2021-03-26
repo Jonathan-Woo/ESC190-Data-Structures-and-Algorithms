@@ -1,0 +1,1 @@
+print(cur_col)
