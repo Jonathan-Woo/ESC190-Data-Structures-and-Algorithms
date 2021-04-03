@@ -1,6 +1,8 @@
 #include "c_img.h"
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+#include <stdlib.h>
 
 #define min(X,Y) ((X) < (Y) ? (X) : (Y))
 #define max(X,Y) ((X) > (Y) ? (X) : (Y))
@@ -78,25 +80,32 @@ int main(void){
 
     char name[] = "president.bin";
     read_in_img(&president, name);
+    read_in_img(&president_temp, name);
     int i;
     int e;
     int j;
 
-    uint8_t r = get_pixel(president, i, e, 0);
-    uint8_t g = get_pixel(president, i, e, 1);
-    uint8_t b = get_pixel(president, i, e, 2);
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+
+    char new_name [100];
 
     //loop 5 times for 5 photos
-    for(j = 1; j < 6; j++){
-        president_temp = president;
+    for(j = 1; j < 2; j++){
         //Loop through height and width to modify values
         for(i = 0; i < president->height; i++){
             for(e = 0; e < president->width; e++){
                 //assuming int col refers to 0 = r 1 = g 2 = b
-                set_pixel(president, i, e, min((1 + 0.2 * j) * r, 255), min((1 + 0.2 * j) * g, 255), min((1 + 0.2 * j) * b, 255));
+                r = get_pixel(president, i, e, 0);
+                g = get_pixel(president, i, e, 1);
+                b = get_pixel(president, i, e, 2);
+                set_pixel(president_temp, i, e, (uint8_t)min((1 + 0.2 * j) * r, 255), (uint8_t)min((1 + 0.2 * j) * g, 255), (uint8_t)min((1 + 0.2 * j) * b, 255));
             }
         }
-        write_image(president, "president.jpeg");
+        // strcat(new_name, itoa(j));
+        // strcat(new_name, ".bin");
+        write_img(president_temp, "sol.bin");
     }
     
     return 0;

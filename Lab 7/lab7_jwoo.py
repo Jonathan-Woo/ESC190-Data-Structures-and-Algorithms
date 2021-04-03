@@ -27,6 +27,10 @@ for row in range(1, len(energies)):
         energy_cost[row][col] = cur_min_energy
 
 print(energy_cost)
+
+#here's the solution to the lowest total cost
+sol_col = energy_cost[len(energies) - 1].index(min(energy_cost[len(energies) - 1]))
+print("Minimum Energy Cost:", energy_cost[len(energies) - 1][sol_col])
                 
 #Now we have the minimum energy cost for each position
 #build the minimum path by choosing the minimum adjacent energy cost at each level 

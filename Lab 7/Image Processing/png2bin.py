@@ -35,7 +35,12 @@ def read_image(filename):
 
     return image
 
-#Write a png image to bin
-image = Image.open("president.jpeg")
-write_image(image, "president.bin")
+def jpeg_to_bin():
+    #Write a png image to bin
+    image = Image.open("president.jpeg")
+    write_image(image, "president.bin")
+
+if __name__ == '__main__':
+    im3 = read_image("sol.bin")
+    im3.save("sol.png")
 
