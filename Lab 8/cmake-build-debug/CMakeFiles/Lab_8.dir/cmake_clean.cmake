@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab_8.dir/avl_bag.c.o"
+  "CMakeFiles/Lab_8.dir/main.c.o"
   "Lab_8"
   "Lab_8.pdb"
 )

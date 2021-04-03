@@ -170,6 +170,33 @@ avl_bag.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab_8.dir/build.make CMakeFiles/Lab_8.dir/avl_bag.c.s
 .PHONY : avl_bag.c.s
 
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab_8.dir/build.make CMakeFiles/Lab_8.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab_8.dir/build.make CMakeFiles/Lab_8.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab_8.dir/build.make CMakeFiles/Lab_8.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... avl_bag.o"
 	@echo "... avl_bag.i"
 	@echo "... avl_bag.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

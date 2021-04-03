@@ -617,33 +617,53 @@ bool is_avl_tree(bag_t *bag){
 bool bag_insert_norot(bag_t *bag, bag_elem_t elem){
     struct avl_node *cur_node = bag->root;
 
+    struct avl_node *traversed[20];
+    int num_traversed = 0;
+
     while(true){
-        if (elem > cur_node->elem) {
+        if (bag->cmp(elem, (cur_node)->elem) > 0){
             if(cur_node->right){
+                traversed[num_traversed] = cur_node;
+                num_traversed += 1;
                 cur_node = cur_node->right;
+                continue;
             }else {
+                traversed[num_traversed] = cur_node;
+
                 cur_node->right = malloc(sizeof(avl_node_t));
                 cur_node = cur_node->right;
                 cur_node->elem = elem;
                 cur_node->height = 1;
                 cur_node->left = NULL;
                 cur_node->right = NULL;
-                return true;
+                break;
             }
-        } else if (elem < cur_node->elem){
-            if(cur_node->left){
+        } else if (bag->cmp(elem, (cur_node)->elem) < 0) {
+            if (cur_node->left) {
+                traversed[num_traversed] = cur_node;
+                num_traversed += 1;
                 cur_node = cur_node->left;
-            }else{
+                continue;
+            } else {
+                traversed[num_traversed] = cur_node;
+
                 cur_node->left = malloc(sizeof(avl_node_t));
                 cur_node = cur_node->left;
                 cur_node->elem = elem;
                 cur_node->height = 1;
                 cur_node->left = NULL;
                 cur_node->right = NULL;
-                return true;
+                break;
             }
         }
     }
+    //update heights
+    while(num_traversed > -1){
+        printf("%g\n", *(float *)traversed[num_traversed]->elem);
+        avl_update_height(traversed[num_traversed]);
+        num_traversed -= 1;
+    }
+    return true;
 }
 
 bool my_avl_remove(avl_node_t **root, bag_elem_t elem, int (*cmp)(bag_elem_t, bag_elem_t)){
@@ -653,4 +673,13 @@ bool my_avl_remove(avl_node_t **root, bag_elem_t elem, int (*cmp)(bag_elem_t, ba
      */
 
     //find the position of the element
+    struct avl_node *cur_node = (*root);
+    struct avl_node *left = (*root)->left;
+    struct avl_node *right = (*root)->right;
+
+    if(elem > cur_node->elem){
+        cur_node = cur_node->right;
+    }else if(elem < cur_node->elem){
+        cur_node = cur_node->left;
+    }
 }

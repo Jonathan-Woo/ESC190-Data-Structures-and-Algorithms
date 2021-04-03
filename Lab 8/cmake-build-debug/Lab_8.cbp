@@ -81,6 +81,9 @@
 		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/avl_bag.c">
 			<Option target="Lab_8"/>
 		</Unit>
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/main.c">
+			<Option target="Lab_8"/>
+		</Unit>
 		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

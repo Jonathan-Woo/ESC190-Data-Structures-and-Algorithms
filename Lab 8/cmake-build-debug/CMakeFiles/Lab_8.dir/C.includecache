@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/avl_bag.c
+stdio.h
+-
+stdlib.h
+-
+bag.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/bag.h
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Lab 8/bag.h
+stdbool.h
+-
+stdlib.h
+-
+
