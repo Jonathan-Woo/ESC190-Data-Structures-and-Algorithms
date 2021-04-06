@@ -40,14 +40,18 @@ void calc_energy(struct rgb_img *im, struct rgb_img **grad) {
                 y_pre = (int)(*grad)->height - 1;
             }
 
+            //loop through each colour (RGB) for each position
+            //For (y + 1, x) - (y - 1, x)
             for(col = 0; col < 3; col++){
                 sum += pow(get_pixel(im, y_next, x, col) - get_pixel(im, y_pre, x, col), 2);
             }
+            //For (y, x + 1) - (y, x - 1)
             for(col = 0; col < 3; col++){
                 sum += pow(get_pixel(im, y, x_next, col) - get_pixel(im, y, x_pre, col), 2);
             }
             sum = sqrt(sum);
 
+            //write to the new raster and setting RGB values to the same 
             set_pixel(*grad, y, x, (uint8_t)(sum/10), (uint8_t)(sum/10), (uint8_t)(sum/10));
             sum = 0;
         }
@@ -80,11 +84,13 @@ void dynamic_seam(struct rgb_img *grad, double **best_arr){
                 if(x + opt < 0 || x + opt > grad->width - 1){
                     continue;
                 }
+                //update the current minimum if the option being checked is minimal
                 cost = (*best_arr)[grad->width * (y - 1) + x + opt] + get_pixel(grad, y, x, 0);
                 if(cost < cur_min){
                     cur_min = cost;
                 }
             }
+            //Set the solution of the position to the minimum
             (*best_arr)[grad->width * y + x] = cur_min;
             cur_min = 10000;
         }
@@ -120,11 +126,13 @@ void recover_path(double *best, int height, int width, int **path){
             if(cur_pos + opt < 0 || cur_pos + opt > width - 1){
                 continue;
             }
+            //update the current minimum if the option is minimal
             if(best[width * row + cur_pos + opt] < cur_min){
                 cur_min = (int)best[width * row + cur_pos + opt];
                 cur_min_pos = cur_pos + opt;
             }
         }
+        //set the solution at the position as the minimal option
         cur_pos = cur_min_pos;
         (*path)[row] = cur_min_pos;
         cur_min = 10000;
