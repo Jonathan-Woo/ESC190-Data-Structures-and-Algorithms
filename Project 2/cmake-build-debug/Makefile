@@ -170,32 +170,32 @@ c_img.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/c_img.c.s
 .PHONY : c_img.c.s
 
-seamcarving_2.o: seamcarving_2.c.o
+seamcarving.o: seamcarving.c.o
 
-.PHONY : seamcarving_2.o
+.PHONY : seamcarving.o
 
 # target to build an object file
-seamcarving_2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving_2.c.o
-.PHONY : seamcarving_2.c.o
+seamcarving.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving.c.o
+.PHONY : seamcarving.c.o
 
-seamcarving_2.i: seamcarving_2.c.i
+seamcarving.i: seamcarving.c.i
 
-.PHONY : seamcarving_2.i
+.PHONY : seamcarving.i
 
 # target to preprocess a source file
-seamcarving_2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving_2.c.i
-.PHONY : seamcarving_2.c.i
+seamcarving.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving.c.i
+.PHONY : seamcarving.c.i
 
-seamcarving_2.s: seamcarving_2.c.s
+seamcarving.s: seamcarving.c.s
 
-.PHONY : seamcarving_2.s
+.PHONY : seamcarving.s
 
 # target to generate assembly for a file
-seamcarving_2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving_2.c.s
-.PHONY : seamcarving_2.c.s
+seamcarving.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/seamcarving.c.s
+.PHONY : seamcarving.c.s
 
 # Help Target
 help:
@@ -209,9 +209,9 @@ help:
 	@echo "... c_img.o"
 	@echo "... c_img.i"
 	@echo "... c_img.s"
-	@echo "... seamcarving_2.o"
-	@echo "... seamcarving_2.i"
-	@echo "... seamcarving_2.s"
+	@echo "... seamcarving.o"
+	@echo "... seamcarving.i"
+	@echo "... seamcarving.s"
 .PHONY : help
 
 

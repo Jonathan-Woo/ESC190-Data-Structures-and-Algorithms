@@ -9,4 +9,4 @@ add_executable(Project_2
         c_img.c
         c_img.h
         seamcarving.h
-        seamcarving_2.c)
+        seamcarving.c)

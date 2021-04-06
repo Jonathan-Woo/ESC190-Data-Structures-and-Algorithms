@@ -90,29 +90,29 @@ CMakeFiles/Project_2.dir/c_img.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/c_img.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/c_img.c" -o CMakeFiles/Project_2.dir/c_img.c.s
 
-CMakeFiles/Project_2.dir/seamcarving_2.c.o: CMakeFiles/Project_2.dir/flags.make
-CMakeFiles/Project_2.dir/seamcarving_2.c.o: ../seamcarving_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_2.dir/seamcarving_2.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Project_2.dir/seamcarving_2.c.o   -c "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_2.c"
+CMakeFiles/Project_2.dir/seamcarving.c.o: CMakeFiles/Project_2.dir/flags.make
+CMakeFiles/Project_2.dir/seamcarving.c.o: ../seamcarving.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_2.dir/seamcarving.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Project_2.dir/seamcarving.c.o   -c "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c"
 
-CMakeFiles/Project_2.dir/seamcarving_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/seamcarving_2.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_2.c" > CMakeFiles/Project_2.dir/seamcarving_2.c.i
+CMakeFiles/Project_2.dir/seamcarving.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/seamcarving.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c" > CMakeFiles/Project_2.dir/seamcarving.c.i
 
-CMakeFiles/Project_2.dir/seamcarving_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/seamcarving_2.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_2.c" -o CMakeFiles/Project_2.dir/seamcarving_2.c.s
+CMakeFiles/Project_2.dir/seamcarving.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/seamcarving.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c" -o CMakeFiles/Project_2.dir/seamcarving.c.s
 
 # Object files for target Project_2
 Project_2_OBJECTS = \
 "CMakeFiles/Project_2.dir/c_img.c.o" \
-"CMakeFiles/Project_2.dir/seamcarving_2.c.o"
+"CMakeFiles/Project_2.dir/seamcarving.c.o"
 
 # External object files for target Project_2
 Project_2_EXTERNAL_OBJECTS =
 
 Project_2: CMakeFiles/Project_2.dir/c_img.c.o
-Project_2: CMakeFiles/Project_2.dir/seamcarving_2.c.o
+Project_2: CMakeFiles/Project_2.dir/seamcarving.c.o
 Project_2: CMakeFiles/Project_2.dir/build.make
 Project_2: CMakeFiles/Project_2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Project_2"
