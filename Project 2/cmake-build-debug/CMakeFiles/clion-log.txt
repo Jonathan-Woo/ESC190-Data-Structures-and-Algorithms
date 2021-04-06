@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug

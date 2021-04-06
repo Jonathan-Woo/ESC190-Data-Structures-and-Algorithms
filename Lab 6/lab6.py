@@ -89,7 +89,7 @@ def BFS_tree_level(node, level):
     if node == None:
         return
     if level == 1:
-        print(node.value, end= " ")
+        print(node.value)
     elif level > 1 :
         BFS_tree_level(node.left, level-1)
         BFS_tree_level(node.right, level-1)
