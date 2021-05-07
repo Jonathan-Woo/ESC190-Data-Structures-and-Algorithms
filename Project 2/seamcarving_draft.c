@@ -60,7 +60,7 @@ void calc_energy(struct rgb_img *im, struct rgb_img **grad) {
 
 void dynamic_seam(struct rgb_img *grad, double **best_arr){
     /*
-     * Calculates the minimume energy cost at each positions
+     * Calculates the minimum energy cost at each position
      */
     int x, y;
     double cur_min = 10000;
@@ -199,7 +199,7 @@ void print_iarr(int *arr, int width, int height){
 int main(void){
     //read in the 6x5.bin image
     struct rgb_img *img;
-    char name[] = "6x5.bin";
+    char name[] = "HJoceanSmall.bin";
     read_in_img(&img, name);
 
     //Part 1: Dual-Gradient Energy Function
@@ -215,7 +215,7 @@ int main(void){
     //Part 3: Recover the seam
     int *best_path;
     recover_path(best_arr, grad->height, grad->width, &best_path);
-//    print_iarr(best_path, grad->height, 1);
+    print_iarr(best_path, grad->height, 1);
 
     //Part 4: Write a function that removes the seam
     struct rgb_img *dest;

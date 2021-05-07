@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/c_img.c" "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/c_img.c.o"
-  "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c" "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/seamcarving.c.o"
+  "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_draft.c" "/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/seamcarving_draft.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -12,7 +12,11 @@ stdlib.h
 stdint.h
 -
 
-/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.h
+c_img.h
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/c_img.h
+
+/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_draft.c
 seamcarving.h
 /Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.h
 math.h
@@ -21,8 +25,4 @@ stdio.h
 -
 stdlib.h
 -
-
-/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.h
-c_img.h
-/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/c_img.h
 

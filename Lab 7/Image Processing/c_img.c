@@ -100,7 +100,7 @@ int main(void){
                 r = get_pixel(president, i, e, 0);
                 g = get_pixel(president, i, e, 1);
                 b = get_pixel(president, i, e, 2);
-                set_pixel(president_temp, i, e, (uint8_t)min((1 + 0.2 * j) * r, 255), (uint8_t)min((1 + 0.2 * j) * g, 255), (uint8_t)min((1 + 0.2 * j) * b, 255));
+                // set_pixel(president_temp, i, e, (uint8_t)min((1 + 0.2 * j) * r, 255), (uint8_t)min((1 + 0.2 * j) * g, 255), (uint8_t)min((1 + 0.2 * j) * b, 255));
             }
         }
         // strcat(new_name, itoa(j));

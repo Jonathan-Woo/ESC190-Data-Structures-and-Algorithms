@@ -86,10 +86,10 @@
 		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/c_img.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.c">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving.h">
+		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/seamcarving_draft.c">
 			<Option target="Project_2"/>
 		</Unit>
 		<Unit filename="/Users/jwoo/Documents/GitHub/ESC190-Data-Structures-and-Algorithms/Project 2/CMakeLists.txt">

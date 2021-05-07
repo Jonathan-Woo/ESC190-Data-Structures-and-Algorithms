@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Project_2.dir/c_img.c.o"
-  "CMakeFiles/Project_2.dir/seamcarving.c.o"
+  "CMakeFiles/Project_2.dir/seamcarving_draft.c.o"
   "Project_2"
   "Project_2.pdb"
 )
